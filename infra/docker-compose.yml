@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: securevpn-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: securevpn
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: change_me
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

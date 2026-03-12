@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg[binary]
+pydantic
+pydantic-settings
+python-dotenv
+alembic
+python-telegram-bot
+paramiko
+qrcode[pil]
